@@ -10,7 +10,15 @@ vector_store = get_vector_store()
 def retrieve_docs(query: str):
 
     """
-    Retrieve relevant documents.
+    Search information from the uploaded PDF documents.
+
+    Use this tool ONLY when the question is about
+    information that may exist inside the indexed PDFs.
+
+    Examples:
+    - What is machine learning?
+    - Explain neural networks.
+    - Summarize chapter 3.
     """
 
     docs = vector_store.similarity_search(

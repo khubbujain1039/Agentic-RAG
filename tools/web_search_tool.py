@@ -10,7 +10,16 @@ search = DuckDuckGoSearchRun()
 def web_search(query: str):
 
     """
-    Search internet.
+    Search the internet for current or external information.
+
+    Use this tool when:
+    - Latest news
+    - Current events
+    - Information not available in PDFs
+
+    Examples:
+    - Latest GPT model
+    - Who won IPL 2026?
     """
 
     return search.run(query)
